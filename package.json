@@ -43,7 +43,7 @@
     "clean": "rimraf dist/",
     "copyfiles": "copyfiles -u 1 src/**/*.css dist/",
     "push:npm": "np",
-    "test": "echo 'all tests were good!'"
+    "test": "echo 'All tests good'"
   },
   "devDependencies": {
     "@storybook/addon-essentials": "8.0.0-alpha.0",
