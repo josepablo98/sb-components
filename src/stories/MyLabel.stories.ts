@@ -40,3 +40,10 @@ export const CustomColor: Story = {
     color: "text-tertiary",
   },
 };
+export const CustomBackground: Story = {
+  args: {
+    label: "Custom Color Label",
+    color: "text-tertiary",
+    backgroundColor: "black"
+  },
+};
