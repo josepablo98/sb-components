@@ -1,7 +1,7 @@
 {
   "name": "jeypi-custom-components",
   "private": false,
-  "version": "0.0.2",
+  "version": "0.0.2-rc1",
   "type": "module",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -29,6 +29,9 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
+  "engines": {
+    "node": ">=12.0.0"
+  },
   "scripts": {
     "dev": "npm run storybook",
     "build": "npm run clean && tsc && npm run copyfiles",
@@ -38,7 +41,8 @@
     "build-storybook": "storybook build",
     "chromatic": "npx chromatic --project-token=chpt_98a5389f28de6b4",
     "clean": "rimraf dist/",
-    "copyfiles": "copyfiles -u 1 src/**/*.css dist/"
+    "copyfiles": "copyfiles -u 1 src/**/*.css dist/",
+    "push:npm": "np"
   },
   "devDependencies": {
     "@storybook/addon-essentials": "8.0.0-alpha.0",
